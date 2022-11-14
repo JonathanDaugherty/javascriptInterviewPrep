@@ -1,0 +1,67 @@
+1.  Explain Javascript as a dynamic language
+        -means data types of the variables can change during the runtime.
+        -you can change the value of variables throughout the file making it "dynamic"
+2. How does Javascript determine datatypes?
+        -determines data types depending on the value assigned.
+        -looks at the values during the runtime.
+3. What is typeof functions?
+        -Javascript function to get the datatype of javascript variable.
+4. How to check data type in javascript?
+        -typeof() function
+5. What are different data types in javascript?
+        -8 total
+        - Primitive
+            -string (var a = "Test";)
+            -number (var a = 9;)
+            -null (var a = null;)
+            -undefined (var a = undefined;)
+            -boolean (var a = true;)
+            -big int (var a = 9137455309;)
+            -symbol (var a = Symbol();)
+        -Objects
+            -object (var a = new Object();)
+        -Most used data types
+            -string
+            -number
+            -null
+            -undefined
+            -boolean
+            -object
+6. Explain undefined data types?
+    -Variable has been declared but not value assigned.
+        -var x; <- undefined variable
+7. What is null?
+    - indicates an absence of data.  Its not zero, its not blank...it's absent of data.
+8. Null vs undefined?
+    - undefined the variable has been created but alue has not been assigned.
+    - Null - it is an intentional assignment to set value to null...indicates absence of data.
+9. Explain Hoisting?
+    - a mechanism where variables and function declaration are moved to the top of the scope.
+        - console.log(y);
+          var y = 10;
+          Hoisting will move the variable declaration above the console so it will print out as "10" and not undefined.
+10. Are javascript initialization hoisted?
+    - no.
+11. Explain global variables?
+    - variables that are accessible through out the webpage or document
+12. What are the issues with global variables?
+    -make the app harder to debug because global variables could be used in multiple places.
+13. What happens when you declare variables without VAR?
+    - Without var keyword, variable becomes global.
+    -Makes app buggy.
+14. What is use strict?
+    - "Use Strict" strictly checks if the variables is defined using the "var" or the "let" keyword.
+15. How to force developers to use Var keyword?
+    - define "use strict" in your script tags
+16. How can we handle global variables?
+    - Use a namespace to store global variables.
+    - make a struct and pass in global variables into struct.
+        -var global = {}
+        global.connectionString = "Test"
+17. How can we avoid global variables?
+    - put global variables in a proper namespace
+    - Module patterns using closures and IIFE
+18.
+
+
+
