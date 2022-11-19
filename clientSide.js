@@ -12,4 +12,19 @@ function evenNumbers() {
 
     console.log(numbers);
 
+    const initialValue = 0;
+    const sumWithInitial = numbers.reduce((a, b) => a + b, 0);
+    console.log(sumWithInitial);
+
+    document.getElementById("listofE").style.display = "inline-block";
+    document.getElementById("answer1").style.display = "inline-block";
+
+    document.getElementById("listofE").innerHTML = numbers;
+    document.getElementById("answer1").innerHTML = sumWithInitial;
+
+}
+
+function hideValues() {
+    document.getElementById("listofE").style.display = "none";
+    document.getElementById("answer1").style.display = "none";
 }

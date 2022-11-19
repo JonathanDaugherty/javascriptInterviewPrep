@@ -34,11 +34,14 @@
             <div id="challenge-1" class="accordion-collapse collapse" aria-labelledby="header1"
                 data-bs-parent="#challenges">
                 <div class="accordion-body">
-                    <input class="col-1" type="number" placeholder="number 1" id="number1">
+                    <input class="col-1" type="number" placeholder="number 1" id="number1" onfocus="this.value=''"
+                        onclick="hideValues()">
                     <span>+</span>
-                    <input class="col-1" type="number" placeholder="number 2" id="number2">
+                    <input class="col-1" type="number" placeholder="number 2" id="number2" onfocus="this.value=''"
+                        onclick="hideValues()">
                     <button class="col-1" type="button" onclick="evenNumbers()">Submit</button>
-                    <input class="col-2" placeholder="Answer" disabled id="answer1">
+                    <h6>List of even numbers: <span id="listofE"></span></h6>
+                    <h6>Even numbers added up: <span id="answer1"></span></h6>
                 </div>
             </div>
         </div>
