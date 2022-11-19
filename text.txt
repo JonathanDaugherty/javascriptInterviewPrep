@@ -1,67 +1,44 @@
-1.  Explain Javascript as a dynamic language
-        -means data types of the variables can change during the runtime.
-        -you can change the value of variables throughout the file making it "dynamic"
-2. How does Javascript determine datatypes?
-        -determines data types depending on the value assigned.
-        -looks at the values during the runtime.
-3. What is typeof functions?
-        -Javascript function to get the datatype of javascript variable.
-4. How to check data type in javascript?
-        -typeof() function
-5. What are different data types in javascript?
-        -8 total
-        - Primitive
-            -string (var a = "Test";)
-            -number (var a = 9;)
-            -null (var a = null;)
-            -undefined (var a = undefined;)
-            -boolean (var a = true;)
-            -big int (var a = 9137455309;)
-            -symbol (var a = Symbol();)
-        -Objects
-            -object (var a = new Object();)
-        -Most used data types
-            -string
-            -number
-            -null
-            -undefined
-            -boolean
-            -object
-6. Explain undefined data types?
-    -Variable has been declared but not value assigned.
-        -var x; <- undefined variable
-7. What is null?
-    - indicates an absence of data.  Its not zero, its not blank...it's absent of data.
-8. Null vs undefined?
-    - undefined the variable has been created but alue has not been assigned.
-    - Null - it is an intentional assignment to set value to null...indicates absence of data.
-9. Explain Hoisting?
-    - a mechanism where variables and function declaration are moved to the top of the scope.
-        - console.log(y);
-          var y = 10;
-          Hoisting will move the variable declaration above the console so it will print out as "10" and not undefined.
-10. Are javascript initialization hoisted?
-    - no.
-11. Explain global variables?
-    - variables that are accessible through out the webpage or document
-12. What are the issues with global variables?
-    -make the app harder to debug because global variables could be used in multiple places.
-13. What happens when you declare variables without VAR?
-    - Without var keyword, variable becomes global.
-    -Makes app buggy.
-14. What is use strict?
-    - "Use Strict" strictly checks if the variables is defined using the "var" or the "let" keyword.
-15. How to force developers to use Var keyword?
-    - define "use strict" in your script tags
-16. How can we handle global variables?
-    - Use a namespace to store global variables.
-    - make a struct and pass in global variables into struct.
-        -var global = {}
-        global.connectionString = "Test"
-17. How can we avoid global variables?
-    - put global variables in a proper namespace
-    - Module patterns using closures and IIFE
-18.
+10 Javascript Challenges
+
+1. Print all even numbers from 0 – 10
+Try to make the solution to this problem as efficiently as possible. Consider using loops that would allow you to type the fewest characters/commands. While you could simply print the even numbers, get creative and see how you could output them in a way that would work up to 10 or even up to 10,000 with little extra effort.
+
+2. Print a table containing multiplication tables
+Let's start with the tables that many of us had to memorize in school. Can you print a table that contains all the answers to the multiplication tables from 1 through 10?
+
+Like Challenge #1, can you create an efficient solution that you could easily expand should you need the 12 times table?
+
+3. Create a length converter function
+Creating a function is a skill that'll be useful in many settings, and as you progress, you'll be working on much more complicated functions than this one. But a function that converts units of measure can be pretty handy in multiple professions and industries.
+
+Let's start with a conversion from kilometers to miles. The function should include the input in kilometers and return the answer in miles.
+
+4. Calculate the sum of numbers within an array
+You can create your own array of numbers but consider trying this problem with a few different sets to verify your solution. Have one array with negative and positive numbers and another with integers and decimals.
+
+You could also try using arrays of different lengths. If you're feeling comfortable with this, try the slightly more challenging bonus challenge below.
+
+Bonus intermediate challenge: Create a function that can return the sum of a particular column or row number in a table.
+
+5. Create a function that reverses an array
+This challenge is particularly helpful if you're planning to become a Data Scientist. Manipulating data is a significant part of the role, and building the foundations now will help you later down the road when you're working with large databases.
+
+Start small here and work your way up. Begin with an array of 5 numbers, and then try your program with a larger array to verify its success.
+
+6. Sort an array from lowest to highest
+You could create a function for this solution as well, but be sure to try your program with varying lengths and types of arrays. Try one with all integers, another with negative numbers, and another with decimals.
+
+7. Create a function that filters out negative numbers
+In this challenge, you'll have a function that takes an array as an input and returns an array. But if all goes according to plan, it'll remove the negative numbers. This is another example of a task that'll be useful when combing through data and looking for clever ways to eliminate "bad data."
+
+8. Remove the spaces found in a string
+Yet another way to clean up data is to remove any errors or unnecessary spaces. This function will take in a string and then return it with all spaces removed. Think about if you were tasked with cleaning up customer data at your job. You could scale this function to clean up specific fields of data, such as zip codes.
+
+9. Return a Boolean if a number is divisible by 10
+Here, you'll create a function that'll give you a "true" or "false" Boolean as its output. The inputted number should only return a "true" if it's divisible by 10. Otherwise, your program should return a "false" answer.
+
+10. Return the number of vowels in a string
+Create a function that'll return an integer of the number of vowels found in a string. This is a great way to practice determining the features of a dataset. If you use JavaScript later in your career, you'll be well-prepared to determine what datasets (or just strings) consist of. If you feel like an extra challenge, consider returning the number of characters.
 
 
 
