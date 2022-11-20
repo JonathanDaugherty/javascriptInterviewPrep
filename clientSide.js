@@ -27,4 +27,29 @@ function evenNumbers() {
 function hideValues() {
     document.getElementById("listofE").style.display = "none";
     document.getElementById("answer1").style.display = "none";
+    document.getElementById("pWordresult1").style.display = "none";
+    document.getElementById("pWordresult2").style.display = "none";
+}
+
+function checkPalindrome() {
+    var pWord = document.getElementById("pWord").value;
+    var rpWord = [];
+
+    document.getElementById("pWordresult1").style.display = "inline-block";
+    document.getElementById("pWordresult2").style.display = "inline-block";
+
+    for (let i = 0; i < pWord.length; i++) {
+        rpWord.push(pWord[i]);
+    }
+
+    var rpWord2 = rpWord.reverse().join('');
+    var rpWord3 = rpWord.reverse().join(' , ');
+
+    if (rpWord2 == pWord) {
+        document.getElementById("yPal").style.display = "inline-block";
+        document.getElementById("pWordresult1").innerHTML = rpWord2;
+    } else {
+        document.getElementById("nPal").style.display = "inline-block";
+        document.getElementById("pWordresult2").innerHTML = rpWord3;
+    }
 }
