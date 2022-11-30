@@ -48,7 +48,7 @@
         <div class="accordion-item">
             <h6 class="accordion-header" id="header2">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#challenge-2"
-                    aria-expanded="true" aria-controls="challenge-2">
+                    aria-expanded="true" aria-controls="challenge-2" onclick="onPChange()">
                     2. Given a word, check to see if it's a palindrome. If it is, print out the word...if not, print out
                     the list of letters reversed.
                 </button>
@@ -57,13 +57,14 @@
                 data-bs-parent="#challenges">
                 <div class="accordion-body">
                     <input class="col-2" type="text" placeholder="Enter Word Here!" id="pWord" onfocus="this.value=''"
-                        onclick="hideValues()">
+                        onclick="onPChange()">
                     <button class="col-2" type="button" onclick="checkPalindrome()">Palindrome?</button>
-                    <div class="accordion-body" id="pResults">
-                        <h6 id="yPal">It's a palindrome: <span id="pWordresult1"></span></h6>
-                        <h6 id="nPal">It's not a palindrome but here's a list of the
-                            letters: <span id="pWordresult2"></span></h6>
-                    </div>
+                    <br>
+                    <h6 id="yPal" class="position-static">It's a palindrome: <span id="pWordresult1"
+                            class="position-static"></span></h6>
+                    <h6 id="nPal" class="position-static">It's not a palindrome: <span id="pWordresult2"
+                            class="position-static"></span></h6>
+
 
                 </div>
             </div>
